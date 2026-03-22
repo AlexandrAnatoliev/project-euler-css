@@ -4,7 +4,7 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.1](https://img.shields.io/badge/Version-0.1.1-orange.svg)
+  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
@@ -39,7 +39,7 @@ project-euler-website/
 #### Добавить в html файл
 ```
 <!-- Относительная ссылка на файл внутри подмодуля -->
-<link rel="stylesheet" href="/src/styles/dist/main.css">
+<link rel="stylesheet" href="/src/styles/main.css">
 ```
 
 #### При клонировании репозитория использовать флаг --recursive
