@@ -39,7 +39,7 @@ project-euler-website/
 #### Добавить в html файл
 ```
 <!-- Относительная ссылка на файл внутри подмодуля -->
-<link rel="stylesheet" href="/src/styles/main.css">
+<link rel="stylesheet" href="src/styles/main.css">
 ```
 
 #### При клонировании репозитория использовать флаг --recursive
