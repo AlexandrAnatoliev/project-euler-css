@@ -4,7 +4,7 @@
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.2](https://img.shields.io/badge/Version-0.1.2-orange.svg)
+  ![Version 0.1.3](https://img.shields.io/badge/Version-0.1.3-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
@@ -28,7 +28,7 @@ git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src
 
 ```
 # Структура после добавления
-project-euler-website/
+project-euler-blog/
 ├── src/
 │   ├── styles/          # Это связанный репозиторий
 │   │   └── main.css
@@ -44,14 +44,14 @@ project-euler-website/
 
 #### При клонировании репозитория использовать флаг --recursive
 ```
-git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-website.git
+git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
 ```
 
 #### Или так
 ```
 # Обычное клонирование — папка src/styles будет пустой!
-git clone https://github.com/AlexandrAnatoliev/project-euler-website.git
-cd project-euler-website
+git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
+cd project-euler-blog
 ls src/styles/  # пусто или не существует
 
 # Нужно инициализировать и обновить подмодули
