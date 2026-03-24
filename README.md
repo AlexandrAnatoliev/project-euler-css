@@ -1,4 +1,131 @@
 <div align="center">
+  <a id="english"></a>
+  <h1>Welcome to Project-Euler-CSS</h1>
+  <p>This project contains CSS settings for my 
+    <a href="(https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
+    Separating the CSS settings into a separate repository allows them to be reused 
+    across different projects and eliminates the need to make the same changes in each project.</p>
+
+  [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
+  [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
+  ![Version 0.1.6](https://img.shields.io/badge/Version-0.1.6-orange.svg)
+  ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
+  ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
+  [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
+  [![First Contributors](https://img.shields.io/badge/first-contributors-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
+  ![GitHub repo size](https://img.shields.io/github/repo-size/AlexandrAnatoliev/project-euler-css)
+</div>
+
+  > **Author:** Alexandr Anatoliev
+
+  > **GitHub:** [AlexandrAnatoliev](https://github.com/AlexandrAnatoliev)
+
+---
+
+<div align="center">
+  <h2>Navigation</h2>
+</div>
+
+* [Adding a Git submodule](#connecting-git-submodule)
+* [Cloning a repository with a Git submodule](#clone-repo)
+* [Updating a submodule to the latest version](#update-submodule)
+
+---
+
+<div align="center">
+  <h1>Separating CSS settings into a separate repository</h1>
+</div>
+
+<div align="center">
+  <a id="connecting-git-submodule"></a>
+  <h2>Adding a Git submodule</h2>
+</div>
+      
+To add the **project-euler-css**, repository as a Git submodule to the 
+**project-euler-blog**repository, navigate to the project:
+```bash
+  project-euler-blog/
+  └── index.html
+```
+
+And run the command:
+```bash
+git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src/styles
+```
+
+Structure after adding the linked repository:
+```bash
+  project-euler-blog/
+  ├── src/
+  │   └── styles/          
+  │       └── main.css
+  ├── index.html
+  └── .gitmodules
+```
+
+In the project's HTML file (**index.html**), 
+add a link to the file inside the submodule (**main.css**):
+```html
+<link rel="stylesheet" href="src/styles/main.css">;
+```
+
+---
+
+<div align="center">
+  <a id="clone-repo"></a>
+  <h2>Cloning a repository with a Git submodule</h2>
+</div>
+
+When cloning a repository, you must use the **--recursive flag**:
+```bash
+git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
+```
+
+Otherwise, with a regular clone, the src/styles folder will be empty:
+```bash
+git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
+cd project-euler-blog
+ls src/styles/  # пусто или не существует
+```
+
+In this case, you need to initialize and update the submodules:
+```bash
+git submodule init    
+git submodule update 
+```
+
+---
+
+<div align="center">
+  <a id="update-submodule"></a>
+  <h2>Updating a submodule to the latest version</h2>
+</div>
+
+Navigate to the submodule folder:
+```bash
+cd src/styles
+```
+
+Update to the latest commit in the main branch:
+```bash
+git checkout main
+git pull
+```
+
+Return to the main repository:
+```bash
+cd ../..
+```
+
+Commit the change (the new commit reference):
+```bash
+git add src/styles
+git commit -m "Update css to latest version"
+```
+
+---
+
+<div align="center">
   <a id="russian"></a>
   <h1>Добро пожаловать в Project-Euler-CSS</h1>
   <p>Данный проект - это CSS-настройки для моего блога
