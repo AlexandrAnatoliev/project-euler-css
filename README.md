@@ -1,10 +1,15 @@
 <div align="center">
-  <a id="english"></a>
-  <h1>Project-Euler-CSS</h1>
+  <a id="russian"></a>
+  <h1>Добро пожаловать на Project-Euler-CSS</h1>
+  <p>Данный проект - это CSS настройки для моего блога
+    <a href="(https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
+    Выделение CSS настроек в отдельный репозиторий, позволяет
+    использовать их повторно в разных проектах и избавляет от необходимости
+    вносить одни и те же изменения в каждый проект.</p>
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.5](https://img.shields.io/badge/Version-0.1.5-orange.svg)
+  ![Version 0.1.6](https://img.shields.io/badge/Version-0.1.6-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
@@ -17,29 +22,56 @@
   > **GitHub:** [AlexandrAnatoliev](https://github.com/AlexandrAnatoliev)
 
 ---
- 
 
-## Выделение CSS настроек в отдельный репозиторий
+<div align="center">
+  <h2>Навигация</h2>
+</div>
 
-#### Подключить репозиторий как Git-подмодуль в основном репозитории:
+* [Выделение CSS настроек в отдельный репозиторий](#extracting-css-settings-ru)
+* [Задачи](#problems-ru)
+* [Отправка Ваших Изменений](#submitting-your-changes-ru)
+* [Похожие Проекты](#influences-ru)
+* [Контакты](#contact-ru)
+* [Требования](#requirements-ru)
+* [Список Контрибьютеров](#list-of-contributors-ru)
+
+---
+
+<div align="center">
+  <a id="extracting-css-settings-ru"></a>
+  <h2>Выделение CSS настроек в отдельный репозиторий</h2>
+</div>
+
+<div align="center">
+  <h3>Подключение Git-подмодуля репозитория</h3>
+</div>
+      
+Чтобы подключить репозиторий **project-euler-css**, как Git-подмодуль 
+репозитория **project-euler-blog** нужно зайти в проект:
+```
+  project-euler-blog/
+  └── index.html
+```
+
+И ввести команду:
 ```
 git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src/styles
 ```
 
+Структура после добавления связанного репозитория:
 ```
-# Структура после добавления
-project-euler-blog/
-├── src/
-│   └── styles/          # Это связанный репозиторий
-│       └── main.css
-├── index.html
-└── .gitmodules
+  project-euler-blog/
+  ├── src/
+  │   └── styles/          # Это связанный репозиторий
+  │       └── main.css
+  ├── index.html
+  └── .gitmodules
 ```
 
-#### Добавить в html файл
+В HTML файл проекта (**index.html**) необходимо добавить ссылку 
+на файл внутри подмодуля (**main.css**):
 ```
-<!-- Относительная ссылка на файл внутри подмодуля -->
-<link rel="stylesheet" href="src/styles/main.css">
+<link rel="stylesheet" href="src/styles/main.css">;
 ```
 
 #### При клонировании репозитория использовать флаг --recursive
