@@ -1,9 +1,9 @@
 <div align="center">
   <a id="russian"></a>
-  <h1>Добро пожаловать на Project-Euler-CSS</h1>
-  <p>Данный проект - это CSS настройки для моего блога
+  <h1>Добро пожаловать в Project-Euler-CSS</h1>
+  <p>Данный проект - это CSS-настройки для моего блога
     <a href="(https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
-    Выделение CSS настроек в отдельный репозиторий, позволяет
+    Выделение CSS-настроек в отдельный репозиторий, позволяет
     использовать их повторно в разных проектах и избавляет от необходимости
     вносить одни и те же изменения в каждый проект.</p>
 
@@ -30,10 +30,6 @@
 * [Подключение Git-подмодуля репозитория](#connecting-git-submodule-ru)
 * [Клонирование репозитория с Git-подмодулем](#clone-repo-ru-ru)
 * [Обновление подмодуля до последней версии](#update-submodule-ru)
-* [Похожие Проекты](#influences-ru)
-* [Контакты](#contact-ru)
-* [Требования](#requirements-ru)
-* [Список Контрибьютеров](#list-of-contributors-ru)
 
 ---
 
@@ -47,19 +43,19 @@
 </div>
       
 Чтобы подключить репозиторий **project-euler-css**, как Git-подмодуль 
-репозитория **project-euler-blog** нужно зайти в проект:
-```
+репозитория **project-euler-blog**, нужно зайти в проект:
+```bash
   project-euler-blog/
   └── index.html
 ```
 
 И ввести команду:
-```
+```bash
 git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src/styles
 ```
 
 Структура после добавления связанного репозитория:
-```
+```bash
   project-euler-blog/
   ├── src/
   │   └── styles/          # Это связанный репозиторий
@@ -68,9 +64,9 @@ git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src
   └── .gitmodules
 ```
 
-В HTML файл проекта (**index.html**) необходимо добавить ссылку 
+В HTML-файл проекта (**index.html**) необходимо добавить ссылку 
 на файл внутри подмодуля (**main.css**):
-```
+```html
 <link rel="stylesheet" href="src/styles/main.css">;
 ```
 
@@ -82,19 +78,19 @@ git submodule add https://github.com/AlexandrAnatoliev/project-euler-css.git src
 </div>
 
 При клонировании репозитория необходимо использовать флаг **--recursive**:
-```
+```bash
 git clone --recursive https://github.com/AlexandrAnatoliev/project-euler-blog.git
 ```
 
 Иначе, при обычном клонировании - папка src/styles будет пустой:
-```
+```bash
 git clone https://github.com/AlexandrAnatoliev/project-euler-blog.git
 cd project-euler-blog
 ls src/styles/  # пусто или не существует
 ```
 
 В этом случае нужно инициализировать и обновить подмодули:
-```
+```bash
 git submodule init    
 git submodule update 
 ```
@@ -107,23 +103,23 @@ git submodule update
 </div>
 
 Перейти в папку подмодуля:
-```
+```bash
 cd src/styles
 ```
 
 Обновиться до последнего коммита в ветке main:
-```
+```bash
 git checkout main
 git pull
 ```
 
 Вернуться в основной репозиторий:
-```
+```bash
 cd ../..
 ```
 
 Зафиксировать изменение (новую ссылку на коммит):
-```
+```bash
 git add src/styles
 git commit -m "Update css to latest version"
 ```
