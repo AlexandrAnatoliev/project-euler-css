@@ -2,13 +2,13 @@
   <a id="english"></a>
   <h1>Welcome to Project-Euler-CSS</h1>
   <p>This project contains CSS settings for my 
-    <a href="(https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
+    <a href="https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
     Separating the CSS settings into a separate repository allows them to be reused 
     across different projects and eliminates the need to make the same changes in each project.</p>
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.6](https://img.shields.io/badge/Version-0.1.6-orange.svg)
+  ![Version 0.1.7](https://img.shields.io/badge/Version-0.1.7-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
@@ -129,14 +129,14 @@ git commit -m "Update css to latest version"
   <a id="russian"></a>
   <h1>Добро пожаловать в Project-Euler-CSS</h1>
   <p>Данный проект - это CSS-настройки для моего блога
-    <a href="(https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
+    <a href="https://github.com/AlexandrAnatoliev/project-euler-blog">Project-Euler-Blog</a>.
     Выделение CSS-настроек в отдельный репозиторий, позволяет
     использовать их повторно в разных проектах и избавляет от необходимости
     вносить одни и те же изменения в каждый проект.</p>
 
   [![EN](https://img.shields.io/badge/English-🇬🇧-blue)](#english)
   [![RU](https://img.shields.io/badge/Русский-🇷🇺-red)](#russian)
-  ![Version 0.1.6](https://img.shields.io/badge/Version-0.1.6-orange.svg)
+  ![Version 0.1.7](https://img.shields.io/badge/Version-0.1.7-orange.svg)
   ![Stars](https://img.shields.io/github/stars/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   ![Forks](https://img.shields.io/github/forks/AlexandrAnatoliev/project-euler-css.svg?style=flat)
   [![PRs Welcome](https://img.shields.io/badge/PR:s-welcome-brightgreen.svg)](https://github.com/AlexandrAnatoliev/project-euler-css/pulls)
