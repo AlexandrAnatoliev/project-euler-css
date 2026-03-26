@@ -44,8 +44,8 @@
   <h2>Adding a Git submodule</h2>
 </div>
       
-To add the **project-euler-css**, repository as a Git submodule to the 
-**project-euler-blog**repository, navigate to the project:
+To add the **project-euler-css** repository as a Git submodule to the 
+**project-euler-blog** repository, navigate to the project:
 ```bash
   project-euler-blog/
   └── index.html
@@ -206,7 +206,7 @@ Remember every once in a while to pull from the
 upstream repository to keep your local repository 
 up to date with the main project.
 
-_Note: I recommend to always create new branch 
+_Note: I recommend to always create a new branch 
 with each Issue you solve! Otherwise the pull 
 requests will get too large and there could be 
 possible merge conflicts._
