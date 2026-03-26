@@ -31,6 +31,7 @@
 * [Updating a submodule to the latest version](#update-submodule)
 * [Contributing](#contributing)
 * [Influences](#influences)
+* [Contact](#contact)
 * [List of Contributors](#list-of-contributors)
 
 ---
@@ -129,6 +130,7 @@ git commit -m "Update css to latest version"
 ---
 
 <div align="center">
+  <a id="contributing"></a>
   <h2>Contributing</h2>
 </div>
 
@@ -361,6 +363,10 @@ who contributed to this project!
 * [Подключение Git-подмодуля репозитория](#connecting-git-submodule-ru)
 * [Клонирование репозитория с Git-подмодулем](#clone-repo-ru)
 * [Обновление подмодуля до последней версии](#update-submodule-ru)
+* [Для контрибьютеров](#contributing-ru)
+* [Похожие Проекты](#influences-ru)
+* [Контакты](#contact-ru)
+* [Список Контрибьютеров](#list-of-contributors-ru)
 
 ---
 
@@ -454,3 +460,200 @@ cd ../..
 git add src/styles
 git commit -m "Update css to latest version"
 ```
+
+---
+
+<div align="center">
+  <a id="contributing-ru"></a>
+  <h2>Для контрибьютеров</h2>
+</div>
+
+<div align="center">
+  <h3>Инструкции по Установке</h3>
+</div>
+
+1. Сделайте "форк" этого репозитория нажатием 
+  кнопки "Fork" в правом верхнем углу страницы.
+  Это создаст копию ркпозитория на Вашем GitHub 
+  аккаунте.
+
+2.Клонируйте Ваш "форкнутый" репозиторий нажатием
+  кнопки "Code":
+
+Откроется маленькое окно: 
+
+Скопируйте из него URL и выполните на своем 
+компьютере команду:
+
+```bash
+git clone https://github.com/<your-username>/project-euler-css.git
+```
+
+3. Перейдите в папку с проектом:
+
+```bash
+cd project-euler-css
+```
+
+4. Добавьте ссылку на оригинальный репозиторий
+  для будущих обновлений:
+
+```bash
+git remote add upstream https://github.com/AlexandrAnatoliev/project-euler-css.git
+```
+
+(Напомню, здесь должен быть URL оригинального
+репозитория, а не "форкнутого" Вами, так что
+username в нем должно быть `AlexandrAnatoliev`,
+а не Ваш собственный username.)
+
+5. Проверьте ремоуты для своего репозитория:
+
+```bash
+git remote -v
+```
+
+Вы должны увидеть origin (создается автоматически
+при клонировании) и upstream ремоуты: 
+
+``` 
+origin  https://github.com/<your-username>/project-euler-css.git (fetch)
+origin  https://github.com/<your-username>/project-euler-css.git (push)
+upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (fetch)
+upstream        https://github.com/AlexandrAnatoliev/project-euler-css.git (push)
+```
+
+6. Выполните pull из upstream репозитория в Вашу
+  master ветку, чтобы синхронизировать ее с основным
+  проектом:
+
+```bash
+git pull upstream master
+```
+
+7. Создайте новую ветку командой:
+
+```bash
+git switch -c fix-issue
+```
+
+Сейчас Вы готовы начать работать с issue!
+Помните, каждый раз сначала делать pull
+из upstream репозитория, чтобы держать содержимое
+Вашего локального репозитория в соответствии
+с главным проектом.
+
+_Примечание: Рекомендую всегда создавать новую
+ветвь для каждого issue, который Вы выполняете!
+Иначе pull request будут слишком большими и 
+возможно аозникнут конфликты слияния._
+
+---
+
+<div align="center">
+  <a id="submitting-your-changes-ru"></a>
+  <h2>Отправка Ваших изменений</h2>
+</div>
+
+После того как Вы решили проблему, Вы готовы отправить 
+изменения! 
+
+1. Добавьте Ваши изменения в отслеживание:
+
+```bash
+git add файлы-которые-вы-изменили
+```
+
+2. Сделайте коммит:
+
+```bash
+git commit -m "Fixed issue"
+```
+
+3. Отправить изменения в Ваш "форкнутый" репозиторий:
+
+```bash
+git push origin fix-issue
+```
+
+После того как Вы отправили Ваши изменения на 
+GitHub, Вы готовы создать pull request.
+Перейдите на Ваш "форк" репозитория на GitHub.
+
+- Вы увидите надпись "fix-issue had recent pushes" 
+(или как Ваша ветка называется) и кнопку 
+"Compare & pull request" на ней.
+
+- Нажмите кнопку "Compare & pull request" и перейдете
+на страницу pull request оригинального репозитория
+прректа project-euler.
+
+- Заполните поля title и description подробностямм
+о задаче и Вашем ее решении. Вы можете также добавить
+иную информацию, такую как скриншоты, если хотите.
+
+- В конце нажмите кнопку "Create pull request" 
+чтобы закончить создание pull request.
+
+Поздравляю, Вы сделали свой вклад в open 
+source на GitHub!
+
+Можете расслабиться и подождать пока не сделают
+ревью Вашего кода. Если все хорошо, Ваш pull request
+вольют в основную ветку. Если нет, Вам будет 
+предложено внести изменения в Ваш код.
+
+Помните, что нужно подождать ревью Вашего pull 
+request, не закрывайте его сами.
+Если Вас просят сделать изменения, Вы можете
+коммититить их в ну же самую ветвь, не нужно
+закрывать текущий pull request и открывать новый.
+
+---
+
+<div align="center">
+  <a id="influences-ru"></a>
+  <h2>Похожие проекты</h2>
+</div>
+
+Этот проект вдохновлялся несколькими хорошими
+проектами, созданными с целью помочь новичкам
+сделать свой первый вклад в open source.
+
+- [Fork, Commit, Merge](https://github.com/fork-commit-merge/fork-commit-merge): 
+Проект созданный чтобы помочь Вам познакомиться
+с процессом вклада в open source на GitHub,
+а также помочь освоить базы программирования на
+различных языках, библиотеках и фреймворках.
+
+- [Polyglot-Calculators](https://github.com/B3rou/Polyglot-Calculators): 
+Polyglot-Calculators управляемый сообществом современный гибридный проект, 
+который демонстрирует, как математические калькуляторы  и алгоритмы реализуются
+на разных языках программирования.
+
+Я очень рекомендую посмотреть эти проекты!
+
+---
+
+<div align="center">
+  <a id="contact-ru"></a>
+  <h2>Контакты</h2>
+</div>
+
+Столкнувшись с затруднениями, не стесняйтесь
+открыть issue, написать в
+[Discussions](https://github.com/AlexandrAnatoliev/project-euler-css/discussions/10)
+или мне на почту per-1986@list.ru.
+
+---
+
+<div align="center">
+  <a id="list-of-contributors-ru"></a>
+  <h2>Список Контрибьютеров</h2>
+</div>
+
+Огромное спасибо всем, кто контрибьютил
+в этот проект!
+
+<a href="https://github.com/AlexandrAnatoliev"><img src="https://images.weserv.nl/?url=https://avatars.githubusercontent.com/u/116306656?v=4&h=300&w=300&fit=cover&mask=circle&maxage=7d" width="80px"/></a>
+
