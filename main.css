@@ -115,7 +115,6 @@ img.logo {
 .article-preview {
   border-style: solid;
   border-width: 2px;
-  border-width: 2px;
   background-color: rgb(200, 200, 200);
   border-radius: 10px;
   box-shadow: 5px 5px 5px #777777;
@@ -201,7 +200,7 @@ img.code {
   border-width: 0px;
   color: white;
   box-shadow: 5px 5px 5px #777777;
-  font-family: Courier, Courier New;
+  font-family: Courier, Courier New, sans-serif;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
@@ -241,14 +240,14 @@ img.code {
   border-style: solid;
   border-width: 2px;
   box-shadow: 5px 5px 5px #777777;
-  font-family: Courier, Courier New;
+  font-family: Courier, Courier New, sans-serif;
   padding: 10px;
   border-radius: 10px;
   margin: 10px;
 }
 
 .calculator p {
-  font-family: Courier, Courier New;
+  font-family: Courier, Courier New, sans-serif;
   color: black;
 }
 
