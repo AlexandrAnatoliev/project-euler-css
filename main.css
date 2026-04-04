@@ -35,12 +35,6 @@ header {
   width: 90%;
 }
 
-body li {
-  font-family: Gergia, Times, serif;
-  font-size: 1.1em;
-  color: #7A7A7A
-}
-
 header, footer {
   border-width: 2px;
   background-color: #333;
