@@ -5,7 +5,7 @@ header, section, aside, article, footer, nav, figure, figcaption {
 }
 
 body {
-  font-family: Arial, Verdana;
+  font-family: Arial, Verdana, sans-serif;
   width: 90%;
   box-shadow: 0px 0px 10px #777777;
   border-radius: 10px;
