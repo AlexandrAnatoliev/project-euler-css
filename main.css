@@ -136,10 +136,6 @@ img.logo {
   color: black;
 }
 
-footer {
-  color: white;
-}
-
 footer ul {
   list-style-type: none;
   margin: 0;
@@ -148,6 +144,7 @@ footer ul {
 }
 
 footer ul li:first-child {
+  color: white;
   float: left;
   display: block;
   padding: 0.5em 1em;
@@ -158,6 +155,7 @@ footer ul li:last-child {
 }
 
 footer ul li a {
+  color: white;
   display: block;
   padding: 0.5em 1em;
   text-decoration: none;
