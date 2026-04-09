@@ -156,8 +156,11 @@ footer ul li:last-child {
 }
 
 footer ul li {
-  display: block;
   color: white;
+}
+
+footer ul li a {
+  display: block;
   padding: 0.5em 1em;
   text-decoration: none;
 }
