@@ -149,16 +149,13 @@ footer ul {
 
 footer ul li:first-child {
   float: left;
+  display: block;
+  color: white;
+  padding: 0.5em 1em;
 }
 
 footer ul li:last-child {
   float: right;
-}
-
-footer ul li {
-  display: block;
-  color: white;
-  padding: 0.5em 1em;
 }
 
 footer ul li a {
