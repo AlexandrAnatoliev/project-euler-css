@@ -148,6 +148,7 @@ footer ul li:first-child {
   float: left;
   display: block;
   padding: 0.5em 1em;
+  text-shadow: 1px 1px 0px #000000;
 }
 
 footer ul li:last-child {
