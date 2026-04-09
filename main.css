@@ -147,11 +147,15 @@ footer ul {
   overflow: hidden;
 }
 
-footer ul li {
+footer ul li:first-child {
+  float: left;
+}
+
+footer ul li:last-child {
   float: right;
 }
 
-footer ul li a {
+footer ul li {
   display: block;
   color: white;
   padding: 0.5em 1em;
